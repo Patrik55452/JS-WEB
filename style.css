@@ -1,0 +1,198 @@
+/* Základní styl */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-image: url(image/GR.POZADI.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2acc11ca;
+    padding: 20px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    font-weight: 800;
+    color: #d1d139;
+    text-decoration: underline;
+    transition: all 0.3s;
+  }
+
+  header nav ul li a:hover{
+    color: #b21515;
+    transition: all 0.3s easy;
+  }
+  
+  /* Sekce */
+
+  #first-section h2{
+    color: #0a7474;
+    text-decoration: underline;
+  }
+
+
+  #second-section h2{
+    color:#0a7474;
+    text-decoration: underline;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+  
+  .image-container {
+    display: flex;
+  }
+  
+  .image-container img {
+    width: 20%;
+    margin-right: 20%;
+    border-radius: 90px;
+    transition: transform 0.2s; 
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+    border-radius: 90px;
+    
+    transition: transform 0.2s; 
+  }
+  
+  /* Formulář */
+
+  form {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  
+  input, button {
+    background-color: #b8acac;
+    color: red;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  input,button:hover{
+    background-color: #c1e317;
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+
+
+  footer {
+    background-color: #363838;
+    color: #c1e317;
+    font-weight: 700;   
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px 0;
+    text-align: center;
+    cursor: default;
+  }
+
+  .container e{
+    color: red;
+    text-decoration: underline;
+  }
+  
+  /* Zpět nahoru ikonka */
+  #scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    background-color: #a6aea8;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  #scroll-to-top:hover {
+    background-color: #b21515;
+  }
+
+  /* DARK/LIGHT mode */
+
+  #mode-toggle {
+    background-color: #db4fea;
+    color: #0b0909;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  #mode-toggle:hover {
+    background-color: #c5b0b0;
+  }
+
+  /* DARK MODE */
+  .dark-mode {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  .dark-mode header {
+    background-color: #111;
+  }
+  
+  .dark-mode header nav ul li a {
+    color: #ddd;
+  }
+  
+  .dark-mode section {
+    background-color: #111;
+  }
+  
+  .dark-mode footer {
+    background-color: #111;
+  }
+
+  /* LIGHT MODE */
+
+  .light-mode {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .light-mode header {
+    background-color: #ddd;
+  }
+  
+  .light-mode header nav ul li a {
+    color: #333;
+  }
+  
+  .light-mode section {
+    background-color: #fff;
+  }
+  
+  .light-mode footer {
+    background-color: #ddd;
+  }
